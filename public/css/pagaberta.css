@@ -1,0 +1,85 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f2;
+}
+.titulopag {
+	color: #fff;
+	font-size: 60px;
+}
+.fundo {
+	background-color: #ffffff6c;
+}
+.texto {
+	color: #fff;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.voltar {
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+.tituloPag {
+	color: #fff;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.fundo {
+	background-color: #ffffff6c;
+	padding: 20px;
+	border-radius: 10px;
+}
+.tituloPer {
+	color: #fff;
+	font-size: 25px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.texto {
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.voltar {
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.voltar:hover {
+	background-color: #0056b3;
+}
+.att {
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: #137000;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+}
+.att:hover {
+	background-color: #072c00;
+}
+button[type='button'] {
+	cursor: pointer;
+}

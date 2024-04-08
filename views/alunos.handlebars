@@ -1,0 +1,48 @@
+<main>
+	<head>
+		<link rel='stylesheet' href='/css/main.css' />
+		<link rel='stylesheet' href='/css/tabela.css' />
+	</head>
+	<div class='nome'>
+		<h1>Alunos</h1>
+	</div>
+	<table border='1'>
+		<tr class='border'>
+			<th class='title'>Id</th>
+			<th class='title'> Aluno: </th>
+			<th class='title'> Idade: </th>
+			<th class='title'> Email: </th>
+			<th class='title'>Personal: </th>
+			<th class='title'>Ações: </th>
+		</tr>
+		{{#if alunos}}
+			{{#each alunos}}
+				<tr>
+					<td>{{this.id}}</td>
+					<td>{{this.nomeAluno}}</td>
+					<td>{{this.idadeAluno}}</td>
+					<td>{{this.emailAluno}}</td>
+					<td>
+						{{this.personal.nome}}
+						<form action='/alunos/{{this.id}}/personal' method='get'>
+							<button type='submit' class='abrir'>Abrir</button>
+						</form>
+
+					</td>
+					<td>
+						<form action='alunos/{{this.id}}' method='get'>
+							<button type='submit' class='abrir'>Abrir</button>
+						</form>
+						<form action='/alunos/excluir/{{this.id}}' method='post'>
+							<button type='submit' class='excluir'>Excluir</button>
+						</form>
+					</td>
+				</tr>
+			{{/each}}
+		{{else}}
+			<tr>
+				<td colspan='3'>Não há alunos cadastrados</td>
+			</tr>
+		{{/if}}
+	</table>
+</main>

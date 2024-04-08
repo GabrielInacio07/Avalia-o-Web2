@@ -1,0 +1,55 @@
+<html lang='en'>
+	<head>
+		<link rel='stylesheet' href='/css/main.css' />
+		<link rel='stylesheet' href='/css/nav.css' />
+		<link rel='stylesheet' href='/css/pagicad.css' />
+
+		<meta charset='UTF-8' />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+		<title>Formulário de Aluno</title>
+	</head>
+	<body>
+		<main>
+			<div class='container'>
+				<h1 class='tituloa'>Formulário de Aluno</h1>
+
+				<form action='/alunos/novo' method='POST'>
+					<label for='nomeAluno'>Nome:</label>
+					<input
+						type='text'
+						id='nomeAluno'
+						name='nomeAluno'
+						value='{{aluno.nomeAluno}}'
+					/>
+					<label for='idadeAluno'>Idade:</label>
+					<input
+						type='number'
+						id='idadeAluno'
+						name='idadeAluno'
+						value='{{aluno.idadeAluno}}'
+					/>
+					<label for='emailAluno'>Email:</label>
+					<input
+						type='email'
+						id='emailAluno'
+						name='emailAluno'
+						value='{{aluno.emailAluno}}'
+					/>
+					<label for='matriculaPersonal'>Matrícula do Personal:</label>
+					<input
+						type='text'
+						id='matriculaPersonal'
+						name='matriculaPersonal'
+						placeholder='Digite a matrícula do personal'
+						required
+						oninvalid="this.setCustomValidity('Por favor preencha com a matricula padrao: 23442')"
+					/>
+
+					<button type='submit'>Enviar</button>
+					<a href='/'><button type='button' class='voltar'>Voltar à Página
+							Inicial</button></a>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<head>
+	<link rel='stylesheet' href='/css/main.css' />
+	<link rel='stylesheet' href='/css/nav.css' />
+	<link rel='stylesheet' href='/css/pagaberta.css' />
+</head>
+<main>
+
+	<h1 class='tituloPag'>ALUNO</h1>
+	<div class='fundo'>
+		<div class='fundo'>
+			<p>Aluno: {{aluno.nomeAluno}}</p>
+			<p>Idade: {{aluno.idadeAluno}}</p>
+			<p>Email: {{aluno.emailAluno}}</p>
+		</div>
+
+		<p class='tituloPer'>PERSONAL</p>
+		<div class='fundo'>
+			<p>Nome: {{aluno.personal.nome}}</p>
+			<p>Matricula: {{aluno.personal.matricula}}</p>
+			<p>Email: {{aluno.personal.email}}</p>
+		</div>
+		<a href='/alunos/{{aluno.id}}/atualizar'><button
+				type='button'
+				class='att'
+			>Atualizar Aluno</button></a>
+
+		<a href='/'><button type='button' class='voltar'>Voltar à Página Inicial</button></a>
+	</div>
+</main>
