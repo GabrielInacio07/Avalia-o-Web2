@@ -1,0 +1,32 @@
+<html lang='en'>
+<head>
+    <link rel='stylesheet' href='/css/main.css' />
+    <link rel='stylesheet' href='/css/nav.css' />
+    <link rel='stylesheet' href='/css/pagicad.css' />
+
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Cadastro de Personal</title>
+</head>
+<body>
+    <main>
+        <div class='container'>
+            <h1 class='tituloa'>Cadastro de Personal</h1>
+
+            <form action='/personais/novo' method='POST'>
+                <label for='nome'>Nome:</label>
+                <input type='text' id='nome' name='nome' required />
+
+                <label for='matricula'>Matrícula:</label>
+                <input type='text' id='matricula' name='matricula' required />
+
+                <label for='email'>Email:</label>
+                <input type='email' id='email' name='email' required />
+
+                <button type='submit'>Cadastrar</button>
+                <a href='/'><button type='button' class='voltar'>Voltar à Página Inicial</button></a>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

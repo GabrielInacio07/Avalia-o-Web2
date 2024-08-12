@@ -1,0 +1,30 @@
+<html lang='en'>
+<head>
+    <link rel='stylesheet' href='/css/main.css' />
+    <link rel='stylesheet' href='/css/nav.css' />
+    <link rel='stylesheet' href='/css/tabela.css' />
+
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Lista de Personais</title>
+</head>
+<body>
+    <main>
+        <h1>Personais Cadastrados</h1>
+        <table border='1'>
+            <tr class='border'>
+                <th class='title'>Nome</th>
+                <th class='title'>Matrícula</th>
+                <th class='title'>Email</th>
+            </tr>
+            {{#each Personais}}
+            <tr>
+                <td>{{this.nome}}</td>
+                <td>{{this.matricula}}</td>
+                <td>{{this.email}}</td>
+            </tr>
+            {{/each}}
+        </table>
+    </main>
+</body>
+</html>
